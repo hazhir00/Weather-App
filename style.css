@@ -1,0 +1,140 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Variables */
+
+/* Main CSS */
+/* Body */
+body {
+    background: #222;
+    /* height: 100vh; */
+    display: grid;
+    place-items: center;
+}
+
+/* Card */
+.card {
+    width: 90%;
+    max-width: 30em;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 3em 2em;
+    text-align: center;
+    margin: 3em 0;
+}
+
+/* Search Box in Div Card */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #dde4e4;
+    color: #555;
+    padding: 1em 1.5em;
+    height: 3.25em;
+    border-radius: 30px;
+    width: 80%;
+    margin-right: 1em;
+    font-size: 1.1rem;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #dde4e4;
+    border-radius: 50%;
+    width: 4.4em;
+    height: 4.4em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 1rem;
+}
+
+/* Main Div */
+.weather-icon {
+    width: 70%;
+    margin-top: 1em;
+}
+
+.weather h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* Details Div */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    margin-top: 3em;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 20%;
+    margin-right: 0.8em;
+}
+
+.humidity,
+.wind {
+    font-size: 2rem;
+}
+
+.weather {
+    display: none;
+}
+
+/* Error Div */
+.error {
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    color: white;
+    background-color: red;
+    max-width: fit-content;
+    display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 376px) {
+    .humidity,
+    .wind {
+        font-size: 1.5rem;
+    }
+    .text {
+        font-size: 0.8rem;
+    }
+}
